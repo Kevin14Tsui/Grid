@@ -1,6 +1,7 @@
 body {
     margin: 0%;
-    padding: 10px 0px;
+    padding: 0px;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-11/world-cup-qatar-2022-logo.png?itok=khT7zFBQ");
@@ -16,6 +17,8 @@ body {
     font-size: 20px;
     list-style: none;
     font-weight: bold;
+    margin-bottom: 50px;
+
 }
 
 i {
@@ -45,14 +48,13 @@ i {
 }
 
 
-
-
 .news-header {
     background-color: gold;
     grid-area: header;
     text-align: center;
     padding: 2px;
     opacity: 0.7;
+    height: 150px;
 }
 
 img{
@@ -101,7 +103,6 @@ img{
         width: 85%;
         margin-left: auto;
         margin-right: auto;
-        justify-content: center;
         display: grid;
         border-radius: 5px;
         grid-template-columns:  repeat(5, auto);
