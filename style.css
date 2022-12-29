@@ -1,7 +1,38 @@
+body {
+    margin: 0%;
+    padding: 10px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-11/world-cup-qatar-2022-logo.png?itok=khT7zFBQ");
+}
+
+
+.menuul {
+    width: 100%;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 10px;
+    font-size: 20px;
+    list-style: none;
+    font-weight: bold;
+}
+
+i {
+    margin: 2px;
+}
+
+[href]{
+    color: black;
+    text-decoration: none
+}
+
 .grid-container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
     display: grid;
-    height: 800px;
-    border-radius: 5px;
     grid-template-columns:  repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     row-gap: 10px;
@@ -14,42 +45,20 @@
 }
 
 
-body {
-    margin: 40px;
-    background-image: url("https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-11/world-cup-qatar-2022-logo.png?itok=khT7zFBQ");
-}
 
-
-.menuul {
-    background-color: #eee;
-    display: flex;
-    justify-content: space-around;
-    padding: 12px 30px;
-    font-size: 20px;
-    font-weight: 500;
-    list-style: none;
-    width: 100%;
-    font-weight: bold;
-}
-
-i {
-    margin: 5px;
-}
-
-[href]{
-    color: black;
-    text-decoration: none
-}
 
 .news-header {
     background-color: gold;
     grid-area: header;
     text-align: center;
+    padding: 2px;
     opacity: 0.7;
 }
 
 img{
     border-radius: 5px;
+    width: 550px ;
+    height:300px ;
 }
 
 .ads {
@@ -84,4 +93,34 @@ img{
 
 .argentina:hover {
     content: url("https://digitalhub.fifa.com/transform/afdfd83b-386a-40e9-a1fa-e0b826cde8d0/Argentina-v-France-Final-FIFA-World-Cup-Qatar-2022?io=transform:fill,height:775,width:1920&quality=75");
+}
+
+@media only screen and (min-width: 480px) and (max-width:750px  ) {
+    
+    .grid-container {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        display: grid;
+        border-radius: 5px;
+        grid-template-columns:  repeat(5, auto);
+        grid-template-rows: repeat(5, auto);
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-areas: "header "
+        "main"
+        "footer"
+        "ads "
+    }
+
+    img {
+        display: none;
+    }
+    
+    .text 
+    ,.title 
+    ,.fterul {
+        font-size: 13px;
+    }
 }
